@@ -145,3 +145,38 @@ console.log(timmy)
 
 
 
+class Chef {
+    constructor(chefNameParam) {
+        this.chef = chefNameParam
+
+
+    }
+}
+
+
+class Dinner {
+    constructor(appetizerParam, entreeParam, dessertParam) {
+        this.appetizer = appetizerParam
+        this.entree = entreeParam
+        this.dessert = dessertParam
+    }
+
+}
+
+const dinnerOne = new Dinner("cheese sticks", "pasta", "chocolate cake")
+
+const dinnerTwo = new Dinner("tacos", "burger", "pie")
+
+const dinnerThree = new Dinner("fries", "salmon", "pudding")
+
+
+
+
+console.log(dinnerOne)
+
+console.log(dinnerTwo)
+
+console.log(dinnerThree)
+
+
+
