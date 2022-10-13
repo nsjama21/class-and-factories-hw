@@ -148,9 +148,14 @@ console.log(timmy)
 class Chef {
     constructor(chefNameParam) {
         this.chef = chefNameParam
-
-
+        this.dinners = []
     }
+
+    generateDinner(appetizerParam, entreeParam, dessertParam) {
+        const newDinner = new Dinner(appetizerParam, entreeParam, dessertParam)
+        this.dinners.push(newDinner)
+    }
+
 }
 
 
@@ -163,20 +168,32 @@ class Dinner {
 
 }
 
-const dinnerOne = new Dinner("cheese sticks", "pasta", "chocolate cake")
+const chefMan = new Chef("Billbob")
+console.log(chefMan)
 
-const dinnerTwo = new Dinner("tacos", "burger", "pie")
-
-const dinnerThree = new Dinner("fries", "salmon", "pudding")
-
-
+chefMan.generateDinner("cheese sticks", "pasta", "chocolate cake")
+console.log(chefMan)
 
 
-console.log(dinnerOne)
+chefMan.generateDinner("tacos", "burger", "pie")
+console.log(chefMan)
 
-console.log(dinnerTwo)
 
-console.log(dinnerThree)
+
+// const dinnerOne = new Dinner("cheese sticks", "pasta", "chocolate cake")
+
+// const dinnerTwo = new Dinner("tacos", "burger", "pie")
+
+// const dinnerThree = new Dinner("fries", "salmon", "pudding")
+
+
+
+
+// console.log(dinnerOne)
+
+// console.log(dinnerTwo)
+
+// console.log(dinnerThree)
 
 
 
