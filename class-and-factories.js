@@ -1,7 +1,7 @@
 class Hamster {
-    constructor(priceParam) {
+    constructor(nameParam) {
         this.owner = ""
-        this.name = "BillyBob"
+        this.name = nameParam
         this.price = 15
     }
 
@@ -69,8 +69,79 @@ class Person {
     buyHamster(hamster) {
         this.hamsters.push(hamster)
         this.mood += 10
-        this.bankAccount -= getPrice()
+        this.bankAccount -= hamster.getPrice()
+
     }
 
+
 }
+
+const timmy = new Person("Timmy")
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+
+timmy.eat()
+timmy.eat()
+timmy.eat()
+timmy.eat()
+timmy.eat()
+
+// console.log(timmy)
+
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+timmy.exercise()
+
+// console.log(timmy)
+
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+
+
+const gus = new Hamster("Gus")
+gus.owner = "Timmy"
+// console.log(gus.owner)
+
+timmy.buyHamster(gus)
+
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+timmy.ageUp()
+
+
+
+
+timmy.eat()
+timmy.eat()
+
+timmy.exercise()
+timmy.exercise()
+
+console.log(timmy)
+
+
 
